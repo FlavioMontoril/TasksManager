@@ -1,0 +1,51 @@
+POST http://localhost:4002/v1/tasks HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "summary": "Created Task",
+    "description": "Task by Sangati",
+    "type": "EPIC",
+    "status": "IN_PROGRESS",
+    "createdAt": "",
+    "reporter": "Alan Maxuel"
+}
+
+###
+GET http://localhost:4002/v1/tasks  
+
+###
+GET http://localhost:4002/v1/tasks/57f315ac-aa83-4cf3-a0b0-171ce133d947
+
+###
+PUT http://localhost:4002/v1/tasks/0c706c44-54d7-44fa-a404-dddc6fe4dd2e
+Content-Type: application/json
+
+{
+   "summary": "Created Task",
+    "description": "Task by Sangati",
+    "type": "EPIC",
+    "status": "IN_PROGRESS",
+    "createdAt": "",
+    "reporter": "Alan Maxuel" 
+}
+
+###
+DELETE http://localhost:4002/v1/tasks/95875468-0bb2-4f54-8741-8c729dd77de5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
